@@ -1,2 +1,2 @@
 FROM httpd
-COPY ./* /usr/local/apache2/htdocs/
+COPY ./index.php /usr/local/apache2/htdocs/
