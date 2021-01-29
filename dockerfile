@@ -1,4 +1,2 @@
 FROM httpd
-ADD . /var/www/html
-RUN rm /var/html/index.html
-CMD apachectl -D FOREGROUND
+COPY . /usr/local/apache2/htdocs/
