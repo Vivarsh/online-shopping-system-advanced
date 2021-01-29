@@ -1,2 +1,3 @@
 FROM httpd
-COPY ./index.php /usr/local/apache2/htdocs/
+COPY . /usr/local/apache2/htdocs/
+RUN rm /usr/local/apache/htdocs/index.html
