@@ -1,3 +1,3 @@
 FROM httpd
 COPY . /usr/local/apache2/htdocs/
-RUN rm /usr/local/apache/htdocs/index.html
+RUN rm -r /usr/local/apache/htdocs/index.html
