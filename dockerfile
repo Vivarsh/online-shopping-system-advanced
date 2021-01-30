@@ -1,4 +1,4 @@
-FROM devopsedu/webapp
+FROM mattrayner/lamp
 COPY . /var/www/html
 RUN rm /var/www/html/index.html
-CMD apachectl -D FOREGROUND
+CMD ["/run.sh"]
